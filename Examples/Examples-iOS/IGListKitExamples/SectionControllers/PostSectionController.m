@@ -22,18 +22,37 @@
 
 static NSInteger cellsBeforeComments = 3;
 
+@interface PostSectionController ()
+
+@property (nonatomic, assign) BOOL expanded;
+
+@end
+
 @implementation PostSectionController {
     Post *_post;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.inset = UIEdgeInsetsMake(10, 10, 10, 10);
+    }
+    return self;
 }
 
 #pragma mark - IGListSectionController Overrides
 
 - (NSInteger)numberOfItems {
-    return cellsBeforeComments + _post.comments.count;
+    if (self.expanded) {
+        return cellsBeforeComments + _post.comments.count;
+    }
+    else {
+        return cellsBeforeComments;
+    }
 }
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
-    const CGFloat width = self.collectionContext.containerSize.width;
+    const CGFloat width = self.collectionContext.containerSize.width - (self.inset.left + self.inset.right);
     CGFloat height;
     if (index == 0 || index == 2) {
         height = 41.0;
@@ -67,6 +86,18 @@ static NSInteger cellsBeforeComments = 3;
 
 - (void)didUpdateToObject:(id)object {
     _post = object;
+}
+
+- (void)didSelectItemAtIndex:(NSInteger)index {
+    if (index == 2) {
+        self.expanded = !self.expanded;
+        
+        [self.collectionContext performBatchAnimated:YES updates:^(id<IGListBatchContext>  _Nonnull batchContext) {
+            [batchContext reloadSectionController:self];
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
 @end

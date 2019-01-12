@@ -81,6 +81,9 @@
 		821BC4B81DB8B48300172ED0 /* StoryboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821BC4B71DB8B48300172ED0 /* StoryboardCell.swift */; };
 		821BC4BA1DB8B61200172ED0 /* StoryboardLabelSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821BC4B91DB8B61200172ED0 /* StoryboardLabelSectionController.swift */; };
 		82D91B691DBA0EF300E62758 /* SingleSectionStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D91B681DBA0EF300E62758 /* SingleSectionStoryboardViewController.swift */; };
+		853E4E7F21E987EA001E05B9 /* JLSectionCardDecorationLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 853E4E7C21E987EA001E05B9 /* JLSectionCardDecorationLayout.m */; };
+		853E4E8021E987EA001E05B9 /* JLSectionCardDecorationReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 853E4E7D21E987EA001E05B9 /* JLSectionCardDecorationReusableView.m */; };
+		853E4E8121E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 853E4E7E21E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.m */; };
 		9518E3C31DED03520008CC46 /* UITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518E3C21DED03510008CC46 /* UITestCase.swift */; };
 		9518E3C51DED057E0008CC46 /* LoadMoreViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518E3C41DED057E0008CC46 /* LoadMoreViewControllerUITests.swift */; };
 		9518E3C71DED18370008CC46 /* SearchViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518E3C61DED18370008CC46 /* SearchViewControllerUITests.swift */; };
@@ -100,13 +103,13 @@
 		98B4DBF41DC2937A002BA58A /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DBF31DC2937A002BA58A /* Demo.storyboard */; };
 		C82AE9741251907F18F77350 /* Pods_IGListKitMessageExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B1FA2EFFA5E994FEE587DE /* Pods_IGListKitMessageExample.framework */; };
 		CBA8F64BE2F00E8B3DEFF6ED /* Pods_IGListKitExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7316EF8201F89655D39E53 /* Pods_IGListKitExamples.framework */; };
-		FF73FF9C1FBA4B4400F2AB06 /* UserFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF73FF9B1FBA4B4400F2AB06 /* UserFooterView.swift */; };
-		FF73FF9E1FBA4B5500F2AB06 /* UserFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF73FF9D1FBA4B5500F2AB06 /* UserFooterView.xib */; };
 		EB0289A2202A11E0007E17D5 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB02899F202A11DF007E17D5 /* PersonModel.m */; };
 		EB0289A3202A11E0007E17D5 /* PersonModel.value in Resources */ = {isa = PBXBuildFile; fileRef = EB0289A0202A11DF007E17D5 /* PersonModel.value */; };
 		EB0289A6202A14E1007E17D5 /* ObjcGeneratedModelDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0289A5202A14E1007E17D5 /* ObjcGeneratedModelDemoViewController.m */; };
 		EB0289A9202A1507007E17D5 /* PersonSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0289A8202A1507007E17D5 /* PersonSectionController.m */; };
 		EB0289AC202A1705007E17D5 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0289AA202A1705007E17D5 /* PersonCell.m */; };
+		FF73FF9C1FBA4B4400F2AB06 /* UserFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF73FF9B1FBA4B4400F2AB06 /* UserFooterView.swift */; };
+		FF73FF9E1FBA4B5500F2AB06 /* UserFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF73FF9D1FBA4B5500F2AB06 /* UserFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +238,12 @@
 		821BC4B71DB8B48300172ED0 /* StoryboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardCell.swift; sourceTree = "<group>"; };
 		821BC4B91DB8B61200172ED0 /* StoryboardLabelSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLabelSectionController.swift; sourceTree = "<group>"; };
 		82D91B681DBA0EF300E62758 /* SingleSectionStoryboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSectionStoryboardViewController.swift; sourceTree = "<group>"; };
+		853E4E7921E987EA001E05B9 /* JLSectionCardDecorationLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSectionCardDecorationLayout.h; sourceTree = "<group>"; };
+		853E4E7A21E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSectionCardDecorationLayoutAttributes.h; sourceTree = "<group>"; };
+		853E4E7B21E987EA001E05B9 /* JLSectionCardDecorationReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSectionCardDecorationReusableView.h; sourceTree = "<group>"; };
+		853E4E7C21E987EA001E05B9 /* JLSectionCardDecorationLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSectionCardDecorationLayout.m; sourceTree = "<group>"; };
+		853E4E7D21E987EA001E05B9 /* JLSectionCardDecorationReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSectionCardDecorationReusableView.m; sourceTree = "<group>"; };
+		853E4E7E21E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSectionCardDecorationLayoutAttributes.m; sourceTree = "<group>"; };
 		9518E3C21DED03510008CC46 /* UITestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestCase.swift; sourceTree = "<group>"; };
 		9518E3C41DED057E0008CC46 /* LoadMoreViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreViewControllerUITests.swift; sourceTree = "<group>"; };
 		9518E3C61DED18370008CC46 /* SearchViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewControllerUITests.swift; sourceTree = "<group>"; };
@@ -398,6 +407,7 @@
 		2961B38C1D68B031001C9451 /* IGListKitExamples */ = {
 			isa = PBXGroup;
 			children = (
+				853E4E7821E987EA001E05B9 /* SectionCardDecorationView */,
 				2961B38D1D68B031001C9451 /* AppDelegate.swift */,
 				2961B3941D68B031001C9451 /* Assets.xcassets */,
 				2961B3991D68B031001C9451 /* Info.plist */,
@@ -511,6 +521,19 @@
 			);
 			name = Storyboard;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		853E4E7821E987EA001E05B9 /* SectionCardDecorationView */ = {
+			isa = PBXGroup;
+			children = (
+				853E4E7921E987EA001E05B9 /* JLSectionCardDecorationLayout.h */,
+				853E4E7C21E987EA001E05B9 /* JLSectionCardDecorationLayout.m */,
+				853E4E7B21E987EA001E05B9 /* JLSectionCardDecorationReusableView.h */,
+				853E4E7D21E987EA001E05B9 /* JLSectionCardDecorationReusableView.m */,
+				853E4E7A21E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.h */,
+				853E4E7E21E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.m */,
+			);
+			path = SectionCardDecorationView;
 			sourceTree = "<group>";
 		};
 		95F7F9121DE5006C00A64FEE /* IGListKitExamples-UITests */ = {
@@ -887,6 +910,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853E4E8121E987EA001E05B9 /* JLSectionCardDecorationLayoutAttributes.m in Sources */,
 				299068281D75BFEC00A62888 /* MixedDataViewController.swift in Sources */,
 				299B54001D6BD6630074A202 /* SearchViewController.swift in Sources */,
 				292658661E74A49D0041B56D /* CalendarDayCell.swift in Sources */,
@@ -932,6 +956,7 @@
 				2991F92C1D7BBE5400B0C58F /* RemoveCell.swift in Sources */,
 				13DF01811FA391740092A320 /* ReorderableStackedViewController.swift in Sources */,
 				2942FF8D1D9F39E00015D24B /* EmbeddedSectionController.swift in Sources */,
+				853E4E7F21E987EA001E05B9 /* JLSectionCardDecorationLayout.m in Sources */,
 				29C6297B1DCFD857004A5BB1 /* SupplementaryViewController.swift in Sources */,
 				296DD7551DD2150600206780 /* SelfSizingSectionController.swift in Sources */,
 				2991F9281D7BB9EC00B0C58F /* EmbeddedCollectionViewCell.swift in Sources */,
@@ -952,6 +977,7 @@
 				29C6297D1DCFD8E5004A5BB1 /* FeedItem.swift in Sources */,
 				56C05B6C1E49B2E80026DB39 /* UserInfoCell.m in Sources */,
 				2926586A1E74AEFE0041B56D /* MonthTitleCell.swift in Sources */,
+				853E4E8021E987EA001E05B9 /* JLSectionCardDecorationReusableView.m in Sources */,
 				821BC4B61DB8B3DC00172ED0 /* StoryboardViewController.swift in Sources */,
 				296DD7571DD2163800206780 /* ManuallySelfSizingCell.swift in Sources */,
 				292658571E749EDC0041B56D /* CalendarViewController.swift in Sources */,

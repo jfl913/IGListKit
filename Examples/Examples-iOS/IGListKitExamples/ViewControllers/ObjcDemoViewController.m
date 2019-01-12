@@ -13,7 +13,7 @@
  */
 
 #import "ObjcDemoViewController.h"
-
+#import "JLSectionCardDecorationLayout.h"
 #import <IGListKit/IGListKit.h>
 
 #import "Post.h"
@@ -54,9 +54,15 @@
                                                                      @"I love it."
                                                                      ]],
                   ];
+    
+    JLSectionCardDecorationLayout *decorationLayout = [JLSectionCardDecorationLayout new];
+    decorationLayout.displayDecorationView = YES;
+    decorationLayout.decorationColor = [UIColor lightGrayColor];
+    decorationLayout.decorationInset = UIEdgeInsetsMake(8, 8, 8, 8);
+    decorationLayout.decorationCornerRadius = 8.0;
 
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
-                                             collectionViewLayout:[UICollectionViewFlowLayout new]];
+                                             collectionViewLayout:decorationLayout];
     [self.view addSubview:self.collectionView];
     self.adapter = [[IGListAdapter alloc] initWithUpdater:[[IGListAdapterUpdater alloc] init]
                                            viewController:self];
